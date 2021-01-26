@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: midnightblue;
+}
+
+.menu-head {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+}
+
+.menu-head button {
+    padding: 5px 10px;
+    font-size: 20px;
+    color: midnightblue;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.menu-head button:hover {
+    color: orange;
+}
+
+.menu-head p {
+    margin-left: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: midnightblue;
+}
+
+.menu-links {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    padding: 60px 0;
+    width: 200px;
+    height: 100vh;
+    background-color: whitesmoke;
+    transition: transform .5s;
+    z-index: -10;
+}
+
+.menu-links a {
+    display: block;
+    margin-left: 30px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: midnightblue;
+    transition: color .3s;
+}
+
+.menu-links a:hover {
+    color: orange;
+}
+
+.menu-open {
+    transform: translateX(200px);
+}
